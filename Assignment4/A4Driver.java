@@ -29,7 +29,7 @@ public class A4Driver
     public static void processLinesInFile (String filename) throws Exception 
     {
         A4Driver driver = new A4Driver();
-        Dictionary dictionary = new Dictionary();
+        Map dictionary = new HashMap<String, Word>();
         try 
         {
             // Read file 
@@ -39,23 +39,20 @@ public class A4Driver
             // Iterate over and process each line of file to create dictionary
             for (String s = reader.readLine(); s != null; s = reader.readLine()) 
             {
-                // Add word into dictionary object
+                // Add word into dictionary hashmap
                 if(s.charAt(0) != '*'){
-                    Word word = new Word(s.substring(0,4));
-                    dictionary.addWord(word);
+                    String name = s.substring(0,5);
+                    Word word = new Word(name);
+                    dictionary.put(name,word);
                 }
             }
 
             /* test to make sure hashmap is correct*/
-            Iterator<Item> i = dictionary.iterator();
+            Iterator<String> i = dictionary.keySet().iterator();
             while (i.hasNext())
             {
-                Item temp = i.next();                     // grab next item
-                double tempPrice = temp.calculatePrice(); // calculate final price
-                temp.printItemAttributes();               // print instance variables
-                System.out.println("Total Cost: $" + String.format("%1$,.2f", tempPrice) + "\n");
-                // print out total cost for item
-                totalShoppingCartCost += tempPrice;       // add final price to total shopping cart cost
+                String temp = i.next();                     // grab next item
+                System.out.println(temp);
             }
 
             // do word ladder creation
