@@ -26,20 +26,34 @@ public class Dictionary{
         this.wordDict = new HashMap<String,Word>();
     }
     
-    public void addWord(Word word){
-        this.wordDict.put(word.name, word);
+    public void addWord(String name){
+        Word word = new Word(name);
+        this.wordDict.put(name, word);
     }
 
     public Word getWord(String name){
         return this.wordDict.get(name);
     }
 
-    public boolean findWord(String word){
-        return this.wordDict.containsKey(word);
+    public boolean findWord(String name){
+        return this.wordDict.containsKey(name);
     }
 
+    public Iterator<String> getNameIterator(){
+        return wordDict.keySet().iterator();
+    }
+
+    public Iterator<Word> getWordIterator(){
+        return wordDict.values().iterator();
+    }
+    
     public void cleanDictionary() {
-        //clean visited and numsteps
+        Iterator<Word> i = this.getWordIterator();
+        while (i.hasNext())
+        {
+            Word temp = i.next(); // grab next item
+            temp.cleanWord();     // clean Word (reset values)
+        }
     }
     
 }
