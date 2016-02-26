@@ -26,44 +26,31 @@ public class A4Driver
      * Returns: None                                                               *
      * @throws Exception                                                           *
      ******************************************************************************/
-    public static void processLinesInFile (String filename) throws Exception 
+    public static void processLinesInFile (String dictFileName, String inputFileName) throws Exception
     {
-        A4Driver driver = new A4Driver();
+        //A4Driver driver = new A4Driver();
         Dictionary dictionary = new Dictionary();
+
+        // Create Dictionary
         try 
         {
-            // Read file 
-            FileReader freader = new FileReader(filename);
+            // Read Dictionary file
+            FileReader freader = new FileReader(dictFileName);
             BufferedReader reader = new BufferedReader(freader);
             
-            // Iterate over and process each line of file to create dictionary
+            // Read and process lines to add to dictionary
             for (String s = reader.readLine(); s != null; s = reader.readLine()) 
             {
-                // Add word into dictionary object
+                // Add word into dictionary 
                 if(s.charAt(0) != '*'){
-                    Word word = new Word(s.substring(0,4));
-                    dictionary.addWord(word);
+                    String name = s.substring(0,5);
+                    dictionary.addWord(name);
                 }
             }
-
-            /* test to make sure hashmap is correct*/
-            Iterator<Item> i = dictionary.iterator();
-            while (i.hasNext())
-            {
-                Item temp = i.next();                     // grab next item
-                double tempPrice = temp.calculatePrice(); // calculate final price
-                temp.printItemAttributes();               // print instance variables
-                System.out.println("Total Cost: $" + String.format("%1$,.2f", tempPrice) + "\n");
-                // print out total cost for item
-                totalShoppingCartCost += tempPrice;       // add final price to total shopping cart cost
-            }
-
-            // do word ladder creation
-            for(;;);
         } 
         catch (FileNotFoundException e) 
         {
-            System.err.println ("Error: File not found. Exiting...");
+            System.err.println ("Error: Dictionary File not found. Exiting...");
             e.printStackTrace();
             System.exit(-1);
         } catch (IOException e) 
@@ -72,7 +59,32 @@ public class A4Driver
             e.printStackTrace();
             System.exit(-1);
         }
-        return;
+
+        // Create Word Ladder
+        try
+        {
+            // Read Input file
+            FileReader freader = new FileReader(dictFileName);
+            BufferedReader reader = new BufferedReader(freader);
+
+            // Find Word Ladder
+            for (String s = reader.readLine(); s != null; s = reader.readLine()){
+                String inputWords[] = s.split("\\s+");
+                OutputWordLadder(inputWords[0], inputWords[1]);
+            }
+
+        }
+        catch (FileNotFoundException e)
+        {
+            System.err.println ("Error: Input File not found. Exiting...");
+            e.printStackTrace();
+            System.exit(-1);
+        } catch (IOException e)
+        {
+            System.err.println ("Error: IO exception. Exiting...");
+            e.printStackTrace();
+            System.exit(-1);
+        }        return;
     }
    
     /******************************************************************************
@@ -82,11 +94,38 @@ public class A4Driver
      ******************************************************************************/
     public static void main(String[] args) throws Exception
     {
-        if (args.length != 1)
+        if (args.length != 2)
         {
             System.err.println ("Error: Incorrect number of command line arguments");
             System.exit(-1);
         }
-        processLinesInFile (args[0]);
+        processLinesInFile (args[0], args[1]);
+    }
+
+    public static void OutputWordLadder(String startingWord, String endingWord) {
+        // Check if starting and ending words are in the dictionary
+
+        // If not in dictionary, throw exception
+            System.out.println("At least one of the words " + startingWord + " and " + endingWord + " are not legitimate 5-letter words from the dictionary");
+
+        ArrayList<String> wordLadder = MakeLadder(startingWord, endingWord, -1);
+
+
+        // If found, Print Word Ladder
+
+            System.out.println("**********");
+
+        // else, state
+            System.out.println("There is no word ladder between " + startingWord + " and " + endingWord + "!");
+    }
+
+    // Not sure if arraylist of strings is correct return value
+    public static ArrayList<String> MakeLadder(String startingWord, String endingWord, int position){
+        // Check if done statements
+
+
+        // recursive call
+
     }
 }
+
