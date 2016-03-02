@@ -1,7 +1,7 @@
 /**
   A4Driver Class
   Solves EE422C programming assignment #4
-  @author Dylan Keeton (), Alvin Tung (ayt243)
+  @author Dylan Keeton (DK23765), Alvin Tung (ayt243)
   @version 1.00 2016-02-025
  */
  
@@ -15,9 +15,12 @@ import java.io.IOException;
 import java.util.Scanner;
 
 
+
+
 public class A4Driver
 {
-    
+	private static Queue<String> a;
+	private static Dictionary dictionary;
     /******************************************************************************
      * Method Name: processLinesInFile                                             *
      * Purpose: Opens the file specified in String filename, reads each line in it *
@@ -29,7 +32,7 @@ public class A4Driver
     public static void processLinesInFile (String dictFileName, String inputFileName) throws Exception
     {
         //A4Driver driver = new A4Driver();
-        Dictionary dictionary = new Dictionary();
+        dictionary = new Dictionary();
 
         // Create Dictionary
         try 
@@ -64,13 +67,13 @@ public class A4Driver
         try
         {
             // Read Input file
-            FileReader freader = new FileReader(dictFileName);
+            FileReader freader = new FileReader(inputFileName);
             BufferedReader reader = new BufferedReader(freader);
 
             // Find Word Ladder
             for (String s = reader.readLine(); s != null; s = reader.readLine()){
                 String inputWords[] = s.split("\\s+");
-                OutputWordLadder(inputWords[0], inputWords[1]);
+                OutputWordLadder(inputWords[0], inputWords[1],dictionary);
             }
 
         }
@@ -102,28 +105,89 @@ public class A4Driver
         processLinesInFile (args[0], args[1]);
     }
 
-    public static void OutputWordLadder(String startingWord, String endingWord) {
+    public static void OutputWordLadder(String startingWord, String endingWord, Dictionary dic) {
         // Check if starting and ending words are in the dictionary
-
-        // If not in dictionary, throw exception
-            System.out.println("At least one of the words " + startingWord + " and " + endingWord + " are not legitimate 5-letter words from the dictionary");
-
-        ArrayList<String> wordLadder = MakeLadder(startingWord, endingWord, -1);
-
-
+    	if(!(dic.findWord(startingWord) && dic.findWord(endingWord)))
+    	{
+    		System.err.println("At least one of the words " + startingWord + " and " + endingWord + " are not legitimate 5-letter words from the dictionary\n");
+        	System.out.println("**********");
+    	}  
+    	else if(startingWord.equals(endingWord))
+    	{
+    		System.out.println("\n**********");
+    	}
+    	else
+    	{
+    		a = new LinkedList<String>();
+    		a.add(startingWord);
+    		dictionary.getWord(startingWord).markVisited();
+    		String end = MakeLadder(endingWord);
+    		if(end == null)
+    		{
+    			System.out.println("There is no word ladder between " + startingWord + " and " + endingWord + "!");
+    			
+    		}
+    		else
+    		{
+    			Stack ofCash = new Stack<String>();
+    			String tempWord = end;
+    			while(dictionary.getWord(tempWord).getParent() != null){
+    				ofCash.push(tempWord);
+    				tempWord = dictionary.getWord(tempWord).getParent();
+    			}
+    			System.out.println(startingWord);
+    			while(!ofCash.isEmpty()){
+    				System.out.println(ofCash.pop());
+    			}	
+    		}	
+    		dictionary.cleanDictionary();
+    		System.out.println("**********");
+    	}
+    	
+		
         // If found, Print Word Ladder
-
-            System.out.println("**********");
-
         // else, state
-            System.out.println("There is no word ladder between " + startingWord + " and " + endingWord + "!");
     }
 
-    // Not sure if arraylist of strings is correct return value
-    public static ArrayList<String> MakeLadder(String startingWord, String endingWord, int position){
-        // Check if done statements
-
-
+    public static String MakeLadder(String endingWord){
+    	String currentWord = a.remove();
+    	String tempWord = currentWord;
+        for(int i = 0; i < 5; i++)
+        {
+        	for(int j = 0; j < 26; j++)
+        	{
+        		if(i == 0){
+        			tempWord = (char)(j + 97) + currentWord.substring(1);
+        		}
+        		else if(i == 4)
+        		{
+        			tempWord = currentWord.substring(0,4) + (char)(j+97);
+        		}
+        		else
+        		{
+        			tempWord = currentWord.substring(0,i) + (char)(j+97) + currentWord.substring(i+1);
+        		}
+        		if(dictionary.findWord(tempWord))
+        		{
+        			if(dictionary.getWord(tempWord).getVisited() == false)
+        			{
+        				dictionary.getWord(tempWord).setParent(currentWord);
+        				if(tempWord.equals(endingWord))
+            			{
+            				return endingWord;
+            			}
+        				a.add(tempWord);
+        				dictionary.getWord(tempWord).markVisited();
+        			}	
+        		}
+        	}
+        }
+        if(a.isEmpty())
+        	return null;
+        else
+        	return MakeLadder(endingWord);
+        
+        
         // recursive call
 
     }

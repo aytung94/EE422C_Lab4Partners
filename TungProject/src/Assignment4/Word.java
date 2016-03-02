@@ -14,12 +14,12 @@ public class Word {
     private static final int  wordLength = 5;     // set initially to 5
 
     private String name;
-    private int numSteps;           // number of steps to the target word
+    private String parent;          
     private boolean visited;
 
     public Word(String name) {
         this.name = name;
-        this.numSteps = -1;
+        this.parent = null;
         this.visited = false;
     }
 
@@ -33,17 +33,21 @@ public class Word {
         this.visited = visited;
     }
 
-    public int getNumSteps() {
-        return this.numSteps;
+    public String getParent() {
+        return this.parent;
     }
-
+    
+    public void setParent(String parent)
+    {
+    	this.parent = parent;
+    }
 // Useful Methods
 
     public void markVisited() {
         this.visited = true;
     }
 
-    public void cleanWord() {this.numSteps = 0; this.visited = false;}
+    public void cleanWord() {this.parent = null; this.visited = false;}
 
     // calculate number of steps from other word to this word
     public int compareSteps(String otherName) {

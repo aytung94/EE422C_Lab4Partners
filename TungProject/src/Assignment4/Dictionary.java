@@ -20,7 +20,7 @@ public class Dictionary{
     
 // Constructors    
     /**
-     * Create a hash set for the dicitonary
+     * Create a hash set for the dictionary
      */
     public Dictionary(){
         this.wordDict = new HashMap<String,Word>();
