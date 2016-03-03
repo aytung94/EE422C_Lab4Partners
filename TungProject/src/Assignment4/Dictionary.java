@@ -1,7 +1,7 @@
 /**
   Dictionary Class
   Solves EE422C programming assignment #4
-  @author Dylan Keeton (), Alvin Tung (ayt243)
+  @author Dylan Keeton (DK23765), Alvin Tung (ayt243)
   @version 1.00 2016-02-025
  */
  
@@ -9,14 +9,9 @@ package Assignment4;
 
 import java.util.*;
 
-
-//https://docs.oracle.com/javase/tutorial/collections/interfaces/map.html
-
-
-//dont need this because it does nothing but implement a HashMap
 public class Dictionary{
     
-    Map<String,Word> wordDict;
+    private Map<String,Word> wordDict;
     
 // Constructors    
     /**

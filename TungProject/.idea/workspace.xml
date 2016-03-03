@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/src/Assignment4/A4Driver.java" description="            // Read file &#10;            FileReader f..." line="39" />
+    <bookmark url="file://$PROJECT_DIR$/src/Assignment4/A4Driver.java" description="            // Read file &#10;            FileReader f..." line="37" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="61e3a9e3-7d89-4aee-8514-0512116eded0" name="Default" comment="" />
@@ -29,9 +29,11 @@
       <file leaf-file-name="A4Driver.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Assignment4/A4Driver.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.20307167">
-              <caret line="111" column="12" selection-start-line="111" selection-start-column="12" selection-end-line="111" selection-end-column="30" />
-              <folding />
+            <state vertical-scroll-proportion="0.088541664">
+              <caret line="174" column="23" selection-start-line="174" selection-start-column="23" selection-end-line="174" selection-end-column="23" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -41,7 +43,10 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="100" column="0" selection-start-line="100" selection-start-column="0" selection-end-line="100" selection-end-column="0" />
-              <folding />
+              <folding>
+                <element signature="e#0#16018#0" expanded="false" />
+                <element signature="imports" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -51,7 +56,11 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
-              <folding />
+              <folding>
+                <element signature="e#0#2135#0" expanded="false" />
+                <element signature="e#2084#2085#0" expanded="false" />
+                <element signature="e#2130#2131#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -60,12 +69,12 @@
         <entry file="file://$PROJECT_DIR$/src/Assignment4/Dictionary.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="45" column="44" selection-start-line="45" selection-start-column="44" selection-end-line="45" selection-end-column="44" />
+              <caret line="40" column="44" selection-start-line="40" selection-start-column="44" selection-end-line="40" selection-end-column="44" />
               <folding>
-                <element signature="n#!!doc" expanded="true" />
-                <element signature="e#912#913#0" expanded="true" />
-                <element signature="e#963#964#0" expanded="true" />
-                <element signature="e#1060#1061#0" expanded="true" />
+                <element signature="e#785#786#0" expanded="true" />
+                <element signature="e#836#837#0" expanded="true" />
+                <element signature="e#933#934#0" expanded="true" />
+                <marker date="1456966977864" expanded="true" signature="0:89" placeholder="/**...*/" />
               </folding>
             </state>
           </provider>
@@ -77,7 +86,7 @@
             <state vertical-scroll-proportion="0.0">
               <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
               <folding>
-                <element signature="n#!!doc" expanded="true" />
+                <marker date="1456966961537" expanded="true" signature="0:80" placeholder="/**...*/" />
               </folding>
             </state>
           </provider>
@@ -114,10 +123,9 @@
     <order />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-9" />
-    <option name="y" value="-9" />
+    <option name="x" value="-8" />
     <option name="width" value="1932" />
-    <option name="height" value="1048" />
+    <option name="height" value="1038" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -142,8 +150,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -197,6 +203,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -504,16 +512,17 @@
       <workItem from="1456522286463" duration="2627000" />
       <workItem from="1456881078118" duration="104000" />
       <workItem from="1456881392189" duration="4612000" />
-      <workItem from="1456889127671" duration="439000" />
+      <workItem from="1456889127671" duration="1206000" />
+      <workItem from="1456932929112" duration="3005000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11956000" />
+    <option name="totallyTimeSpent" value="15728000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1932" height="1048" extended-state="0" />
-    <editor active="false" />
+    <frame x="-8" y="0" width="1932" height="1038" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -523,7 +532,7 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32936078" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33296824" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2507837" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -557,7 +566,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Assignment4/A4Driver.java</url>
-          <line>45</line>
+          <line>43</line>
           <properties />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
@@ -575,7 +584,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -583,7 +594,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="100" column="0" selection-start-line="100" selection-start-column="0" selection-end-line="100" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#0#16018#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -591,7 +605,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#0#2135#0" expanded="false" />
+            <element signature="e#2084#2085#0" expanded="false" />
+            <element signature="e#2130#2131#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -600,10 +618,10 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="45" column="44" selection-start-line="45" selection-start-column="44" selection-end-line="45" selection-end-column="44" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#912#913#0" expanded="true" />
-            <element signature="e#963#964#0" expanded="true" />
-            <element signature="e#1060#1061#0" expanded="true" />
+            <element signature="e#785#786#0" expanded="true" />
+            <element signature="e#836#837#0" expanded="true" />
+            <element signature="e#933#934#0" expanded="true" />
+            <marker date="1456966977864" expanded="true" signature="0:89" placeholder="/**...*/" />
           </folding>
         </state>
       </provider>
@@ -613,7 +631,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
+            <marker date="1456966961537" expanded="true" signature="0:80" placeholder="/**...*/" />
           </folding>
         </state>
       </provider>
@@ -622,7 +640,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -630,7 +650,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="100" column="0" selection-start-line="100" selection-start-column="0" selection-end-line="100" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#0#16018#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -638,7 +661,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#0#2135#0" expanded="false" />
+            <element signature="e#2084#2085#0" expanded="false" />
+            <element signature="e#2130#2131#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -647,10 +674,66 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="45" column="44" selection-start-line="45" selection-start-column="44" selection-end-line="45" selection-end-column="44" />
           <folding>
+            <element signature="e#785#786#0" expanded="true" />
+            <element signature="e#836#837#0" expanded="true" />
+            <element signature="e#933#934#0" expanded="true" />
+            <marker date="1456966977864" expanded="true" signature="0:89" placeholder="/**...*/" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Assignment4/Word.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+          <folding>
+            <marker date="1456966961537" expanded="true" signature="0:80" placeholder="/**...*/" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Assignment4/A4Driver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
             <element signature="n#!!doc" expanded="true" />
-            <element signature="e#912#913#0" expanded="true" />
-            <element signature="e#963#964#0" expanded="true" />
-            <element signature="e#1060#1061#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.7.0_79/src.zip!/java/io/FileInputStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="100" column="0" selection-start-line="100" selection-start-column="0" selection-end-line="100" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#16018#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.7.0_79/src.zip!/java/io/FileReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#2135#0" expanded="false" />
+            <element signature="e#2084#2085#0" expanded="false" />
+            <element signature="e#2130#2131#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Assignment4/Dictionary.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="45" column="44" selection-start-line="45" selection-start-column="44" selection-end-line="45" selection-end-column="44" />
+          <folding>
+            <element signature="e#785#786#0" expanded="true" />
+            <element signature="e#836#837#0" expanded="true" />
+            <element signature="e#933#934#0" expanded="true" />
+            <marker date="1456966977864" expanded="true" signature="0:89" placeholder="/**...*/" />
           </folding>
         </state>
       </provider>
@@ -660,7 +743,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="45" column="70" selection-start-line="45" selection-start-column="70" selection-end-line="45" selection-end-column="70" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
+            <marker date="1456966961537" expanded="true" signature="0:80" placeholder="/**...*/" />
           </folding>
         </state>
       </provider>
@@ -669,7 +752,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -677,7 +762,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="100" column="0" selection-start-line="100" selection-start-column="0" selection-end-line="100" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#0#16018#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -685,7 +773,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#0#2135#0" expanded="false" />
+            <element signature="e#2084#2085#0" expanded="false" />
+            <element signature="e#2130#2131#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -694,10 +786,10 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="45" column="44" selection-start-line="45" selection-start-column="44" selection-end-line="45" selection-end-column="44" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#912#913#0" expanded="true" />
-            <element signature="e#963#964#0" expanded="true" />
-            <element signature="e#1060#1061#0" expanded="true" />
+            <element signature="e#785#786#0" expanded="true" />
+            <element signature="e#836#837#0" expanded="true" />
+            <element signature="e#933#934#0" expanded="true" />
+            <marker date="1456966977864" expanded="true" signature="0:89" placeholder="/**...*/" />
           </folding>
         </state>
       </provider>
@@ -707,7 +799,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="45" column="70" selection-start-line="45" selection-start-column="70" selection-end-line="45" selection-end-column="70" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
+            <marker date="1456966961537" expanded="true" signature="0:80" placeholder="/**...*/" />
           </folding>
         </state>
       </provider>
@@ -716,7 +808,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -724,7 +818,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="100" column="0" selection-start-line="100" selection-start-column="0" selection-end-line="100" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#0#16018#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -732,7 +829,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#0#2135#0" expanded="false" />
+            <element signature="e#2084#2085#0" expanded="false" />
+            <element signature="e#2130#2131#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -741,10 +842,10 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="20" column="19" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#912#913#0" expanded="true" />
-            <element signature="e#963#964#0" expanded="true" />
-            <element signature="e#1060#1061#0" expanded="true" />
+            <element signature="e#785#786#0" expanded="true" />
+            <element signature="e#836#837#0" expanded="true" />
+            <element signature="e#933#934#0" expanded="true" />
+            <marker date="1456966977864" expanded="true" signature="0:89" placeholder="/**...*/" />
           </folding>
         </state>
       </provider>
@@ -754,7 +855,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="51" column="9" selection-start-line="51" selection-start-column="9" selection-end-line="51" selection-end-column="9" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
+            <marker date="1456966961537" expanded="true" signature="0:80" placeholder="/**...*/" />
           </folding>
         </state>
       </provider>
@@ -763,7 +864,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -772,10 +875,10 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="15" column="64" selection-start-line="15" selection-start-column="64" selection-end-line="15" selection-end-column="64" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#912#913#0" expanded="true" />
-            <element signature="e#963#964#0" expanded="true" />
-            <element signature="e#1060#1061#0" expanded="true" />
+            <element signature="e#785#786#0" expanded="true" />
+            <element signature="e#836#837#0" expanded="true" />
+            <element signature="e#933#934#0" expanded="true" />
+            <marker date="1456966977864" expanded="true" signature="0:89" placeholder="/**...*/" />
           </folding>
         </state>
       </provider>
@@ -785,7 +888,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="1" column="5" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="5" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
+            <marker date="1456966961537" expanded="true" signature="0:80" placeholder="/**...*/" />
           </folding>
         </state>
       </provider>
@@ -794,7 +897,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="100" column="0" selection-start-line="100" selection-start-column="0" selection-end-line="100" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#0#16018#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -802,19 +908,23 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#0#2135#0" expanded="false" />
+            <element signature="e#2084#2085#0" expanded="false" />
+            <element signature="e#2130#2131#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Assignment4/Dictionary.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="45" column="44" selection-start-line="45" selection-start-column="44" selection-end-line="45" selection-end-column="44" />
+          <caret line="40" column="44" selection-start-line="40" selection-start-column="44" selection-end-line="40" selection-end-column="44" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#912#913#0" expanded="true" />
-            <element signature="e#963#964#0" expanded="true" />
-            <element signature="e#1060#1061#0" expanded="true" />
+            <element signature="e#785#786#0" expanded="true" />
+            <element signature="e#836#837#0" expanded="true" />
+            <element signature="e#933#934#0" expanded="true" />
+            <marker date="1456966977864" expanded="true" signature="0:89" placeholder="/**...*/" />
           </folding>
         </state>
       </provider>
@@ -824,16 +934,18 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
+            <marker date="1456966961537" expanded="true" signature="0:80" placeholder="/**...*/" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Assignment4/A4Driver.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.20307167">
-          <caret line="111" column="12" selection-start-line="111" selection-start-column="12" selection-end-line="111" selection-end-column="30" />
-          <folding />
+        <state vertical-scroll-proportion="0.088541664">
+          <caret line="174" column="23" selection-start-line="174" selection-start-column="23" selection-end-line="174" selection-end-column="23" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

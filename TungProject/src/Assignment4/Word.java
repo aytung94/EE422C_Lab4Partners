@@ -1,7 +1,7 @@
 /**
  Word Class
  Solves EE422C programming assignment #4
- @author Dylan Keeton (), Alvin Tung (ayt243)
+ @author Dylan Keeton (DK23765), Alvin Tung (ayt243)
  @version 1.00 2016-02-025
  */
 
@@ -37,26 +37,18 @@ public class Word {
         return this.parent;
     }
     
-    public void setParent(String parent)
-    {
-    	this.parent = parent;
+    public void setParent(String parent) {
+        this.parent = parent;
     }
+    
 // Useful Methods
 
     public void markVisited() {
         this.visited = true;
     }
 
-    public void cleanWord() {this.parent = null; this.visited = false;}
-
-    // calculate number of steps from other word to this word
-    public int compareSteps(String otherName) {
-        int numSteps = 5;
-        for(int i = 0; i < wordLength; i++ ) {
-            if(this.name.charAt(i) == otherName.charAt(i)) {
-                numSteps--;
-            }
-        }
-        return numSteps;
+    public void cleanWord() {
+        this.parent = null; 
+        this.visited = false;
     }
 }
