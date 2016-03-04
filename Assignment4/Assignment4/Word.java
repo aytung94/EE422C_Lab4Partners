@@ -7,11 +7,7 @@
 
 package Assignment4;
 
-import java.util.*;
-
 public class Word {
-
-    private static final int  wordLength = 5;     // set initially to 5
 
     private String name;
     private String parent;          
