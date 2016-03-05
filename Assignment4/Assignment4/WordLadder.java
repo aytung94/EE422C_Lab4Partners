@@ -43,10 +43,7 @@ public class WordLadder{
             else
             {
                 // Create the word ladder
-                bfs = new LinkedList<String>();                 // initialize the queue for BFS
-                bfs.add(startingWord);                          // add the first word on the queue
-                dictionary.getWord(startingWord).markVisited(); // mark it as visited
-                String end = MakeLadder(endingWord);            // make the ladder with endWord as target 
+                String end = MakeLadder(startingWord, endingWord);            // make the ladder with endWord as target 
                 
                 // If end is null, no ladder found
                 if(end == null)
@@ -89,51 +86,55 @@ public class WordLadder{
     /******************************************************************************
     * Method Name: MakeLadder                                                     *
     * Purpose: Make ladder function to find ladder between two words              *
-    * Parameters: String ending word                                              *
+    * Parameters: String starting word, ending word                                              *
     * Returns: Null if target word not found, ending word if found                *
     ******************************************************************************/
-    public String MakeLadder(String endingWord){
-        // Pop word to check from queue
-        String currentWord = bfs.remove();
+    public String MakeLadder(String startingWord, String endingWord){
+        // Create the word ladder
+        bfs = new LinkedList<String>();                 // initialize the queue for BFS
+        dictionary.getWord(startingWord).markVisited(); // mark it as visited
+        bfs.add(startingWord);							// add first word to queue
+        String currentWord;
         String tempWord;
         
-        // Search for possible next words
-        for(int i = 0; i < 5; i++)
-        {
-            for(int j = 0; j < 26; j++)
-            {
-                // Find all possible words with one letter difference
-                if(i == 0){
-                    tempWord = (char)(j + 97) + currentWord.substring(1);
-                }
-                else if(i == 4)
-                {
-                    tempWord = currentWord.substring(0,4) + (char)(j+97);
-                }
-                else
-                {
-                    tempWord = currentWord.substring(0,i) + (char)(j+97) + currentWord.substring(i+1);
-                }
-                // Check if possible word is valid before marking visited and putting it on the queue
-                if(dictionary.findWord(tempWord))
-                {
-                    if(dictionary.getWord(tempWord).getVisited() == false)
-                    {
-                        dictionary.getWord(tempWord).setParent(currentWord);
-                        if(tempWord.equals(endingWord))
-                        {
-                            return endingWord;
-                        }
-                        bfs.add(tempWord);
-                        dictionary.getWord(tempWord).markVisited();
-                    }    
-                }
-            }
-        }
+        do{
+        	currentWord = bfs.remove();
+        	
+	        // Search for possible next words
+	        for(int i = 0; i < 5; i++)
+	        {
+	            for(int j = 0; j < 26; j++)
+	            {
+	                // Find all possible words with one letter difference
+	                if(i == 0){
+	                    tempWord = (char)(j + 97) + currentWord.substring(1);
+	                }
+	                else if(i == 4)
+	                {
+	                    tempWord = currentWord.substring(0,4) + (char)(j+97);
+	                }
+	                else
+	                {
+	                    tempWord = currentWord.substring(0,i) + (char)(j+97) + currentWord.substring(i+1);
+	                }
+	                // Check if possible word is valid before marking visited and putting it on the queue
+	                if(dictionary.findWord(tempWord))
+	                {
+	                    if(dictionary.getWord(tempWord).getVisited() == false)
+	                    {
+	                        dictionary.getWord(tempWord).setParent(currentWord);
+	                        if(tempWord.equals(endingWord))
+	                        {
+	                            return endingWord; // solution found
+	                        }
+	                        bfs.add(tempWord);
+	                        dictionary.getWord(tempWord).markVisited();
+	                    }    
+	                }
+	            }
+	        }
+        } while(!bfs.isEmpty());
         
-        if(bfs.isEmpty())
-            return null;
-        else
-            return MakeLadder(endingWord);
+        return null; // no solution
     }
 }
